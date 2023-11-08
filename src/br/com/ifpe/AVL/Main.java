@@ -10,10 +10,9 @@ public class Main {public static void main(String[] args) {
 		avl.insert(2);
 		avl.insert(6);
 		avl.insert(7);
-		/*
-						 * avl.insert(4); avl.insert(17); avl.insert(9); avl.insert(71);
-						 * avl.insert(100); avl.insert(110); avl.insert(120);
-						 */	
+		avl.insert(8);
+		avl.insert(3);
+		avl.insert(1);
 		
 		avl.inOrder();
 		

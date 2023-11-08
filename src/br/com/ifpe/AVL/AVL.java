@@ -63,4 +63,24 @@ public class AVL<T extends Comparable<T>> {
 			inOrderRec(raiz.Direita);
 		}
 	}
+	
+	public void girando(Node<T> node, T e){
+		if (node.fatorBalanceamento > 1) {
+			if (raiz.Direita.fatorBalanceamento < 0 ) {
+				System.out.println("Rotacao dupla pra esquerda");
+				
+			}else {
+				System.out.println("Rotacao a esquerda");
+			}
+			
+		}else if (node.fatorBalanceamento < 1) {
+			if (raiz.Esquerda.fatorBalanceamento > 0 ) {
+				System.out.println("Rotacao dupla pra direita");
+				
+			}else {
+				System.out.println("Rotacao direita");
+			}
+		}
+		
+	}
 }
